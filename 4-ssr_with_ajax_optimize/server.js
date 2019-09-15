@@ -15,7 +15,7 @@ const clientManifest = require(path.resolve(__dirname, './dist/vue-ssr-client-ma
 const template = fs.readFileSync(path.resolve(__dirname, './dist/index.ssr.html'), 'utf-8')
 
 // 读取服务端打包出来的 server.js
-const bundle = fs.readFileSync(path.resolve(__dirname, './dist/server.js'), 'utf-8')
+// const bundle = fs.readFileSync(path.resolve(__dirname, './dist/server.js'), 'utf-8')
 
 // 生成一个渲染器，用于后续向服务端发送 html 字符串或者字符流
 const renderer = createBundleRenderer(serverBundle, {

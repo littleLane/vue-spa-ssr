@@ -36,7 +36,7 @@ module.exports = {
   plugins: [
     // 提取 css 文件
     new MiniCssExtractPlugin({
-      filename: '[name].css',
+      filename: 'main.css',
     }),
     new VueLoaderPlugin(),
   ]
