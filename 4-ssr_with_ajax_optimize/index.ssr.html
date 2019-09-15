@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Vue SSR</title>
+  <!-- 引入样式文件 -->
+  <link rel="stylesheet" href="<%= htmlWebpackPlugin.options.files.css %>" />
+</head>
+<body>
+  <!-- 占位符，后续会通过 vue-server-render 插件将服务端解析出的组件 html 字符串插入到这里 -->
+  <!--vue-ssr-outlet-->
+
+  <!-- 将 webpack 通过 webpack.client.conf.js 打包出的文件放在这里，用于激活服务端返回的 html 字符串 -->
+  <script type="text/javascript" src="<%= htmlWebpackPlugin.options.files.js %>"></script>
+</body>
+</html>
